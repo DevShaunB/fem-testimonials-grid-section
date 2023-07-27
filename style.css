@@ -111,16 +111,28 @@ body {
 
 .testimonials__card:nth-of-type(1) {
   position: relative;
+  background: none;
+  overflow: hidden;
+}
+
+.testimonials__card:nth-of-type(1)::before,
+.testimonials__card:nth-of-type(1)::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: var(--clr-bg);
   z-index: -1;
 }
 
 .testimonials__card:nth-of-type(1)::before {
-  content: '';
-  position: absolute;
-  inset: 0;
+  left: 0;
+}
+
+.testimonials__card:nth-of-type(1)::after {
   right: 1.5em;
   background: url(./images/bg-pattern-quotation.svg) no-repeat top right;
-  z-index: -1;
 }
 
 .testimonials__user {
@@ -179,7 +191,7 @@ body {
     grid-row: span 2;
   }
 
-  .testimonials__card:nth-of-type(1)::before {
+  .testimonials__card:nth-of-type(1)::after {
     right: 5em;
   }
 }
