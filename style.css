@@ -96,6 +96,7 @@ body {
 /* MAIN */
 
 .testimonials__list {
+  max-width: 30em;
   display: grid;
   gap: 1.5em;
 }
@@ -141,4 +142,26 @@ body {
   line-height: 1.4;
   color: hsla(var(--clr-primary) / 0.7);
   margin-top: 1.2308em;
+}
+
+@media screen and (min-width: 70em) {
+  .testimonials__list {
+    max-width: 69.375em;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+    gap: 1.5em 1.875em;
+  }
+
+  .testimonials__card:nth-of-type(3n + 1) {
+    grid-column: span 2;
+  }
+
+  .testimonials__card:nth-of-type(3) {
+    grid-column: 1 / span 1;
+  }
+
+  .testimonials__card:nth-of-type(5) {
+    grid-row: span 2;
+  }
 }
