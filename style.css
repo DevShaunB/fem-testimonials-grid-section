@@ -108,10 +108,37 @@ body {
   box-shadow: 2em 3em 2em -2em hsl(var(--clr-gray-200) / 0.5);
 }
 
+.testimonials__user {
+  display: grid;
+  grid-template-columns: 2em 1fr;
+  align-items: center;
+  gap: 1em;
+}
+
+.testimonials__user-img-wrapper {
+  border: 0.125em solid hsla(var(--clr-primary) / 0.2);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials__user-name {
+  font-size: 0.8125rem;
+}
+
 .testimonials__user-status {
+  font-size: 0.6875rem;
   color: hsla(var(--clr-primary) / 0.5);
 }
 
+.testimonials__title {
+  font-size: 1.25rem;
+  font-weight: var(--fw-semibold);
+  margin-top: 0.8em;
+}
+
 .testimonials__desc {
+  font-size: 0.8125rem;
+  line-height: 1.4;
   color: hsla(var(--clr-primary) / 0.7);
+  margin-top: 1.2308em;
 }
