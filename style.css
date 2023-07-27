@@ -61,3 +61,14 @@ img {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* BASE */
+
+body {
+  font-family: var(--ff-sans);
+  font-weight: var(--fw-medium);
+  background-color: hsl(var(--clr-blue-50));
+  padding: 1.5em;
+  display: grid;
+  place-content: center;
+}
