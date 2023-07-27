@@ -14,4 +14,11 @@
 
   --clr-gray-200: 0 0% 81%;
   --clr-blue-50: 210 46% 95%;
+
+  /* FONT */
+
+  --ff-sans: 'Barlow Semi Condensed', sans-serif;
+
+  --fw-medium: 500;
+  --fw-semibold: 600;
 }
